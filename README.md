@@ -34,6 +34,7 @@ Note:
   - After Authentication store user data in the Redux store and redirect the user to the Homepage
 
 - Setting up Redux store for User Details
+
   - npm i -D @reduxjs/toolkit
   - npm i react-redux
   - Create appstore.jsx file
@@ -42,3 +43,5 @@ Note:
   - Provide store to our root or app
   - Wrap body component in btwn the <Provider> component.
   - add appstore in the store (<Provider store={appStore}>)
+
+- Solved bug - user redirection, moved useeffect to header
