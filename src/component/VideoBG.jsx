@@ -11,12 +11,11 @@ const VideoBG = ({ movieId }) => {
   useMovieVideo(movieId);
 
   return (
-    <div>
+    <div className=" w-[100%] h-[90vh] absolute">
       <iframe
-        src={`https://www.youtube.com/embed/${trailerVideo?.key}?si=UnKtb62e9Q85M0xn`}
-        title="YouTube video player"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        referrerPolicy="strict-origin-when-cross-origin"
+        className=" aspect-video w-full h-full"
+        src={`https://www.youtube.com/embed/${trailerVideo?.key}?si=UnKtb62e9Q85M0xn?&autoplay=1&mute=1&controls=0&showinfo=0&modestbranding=1&rel=0&playsinline=1&fs=1`}
+        allowFullScreen
       ></iframe>
     </div>
   );
