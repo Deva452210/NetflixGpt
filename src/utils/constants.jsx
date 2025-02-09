@@ -7,4 +7,11 @@ export const photoURL =
 export const BGWALLPAPER =
   "https://assets.nflxext.com/ffe/siteui/vlv3/154a9550-ce07-4e28-819c-63185dd849f8/web/IN-en-20250106-TRIFECTA-perspective_27b02e7c-f668-4639-9e82-1a5485084b2a_medium.jpg";
 
-export const OPENAIKEY = "Deva";
+export const API_OPTIONS = {
+  method: "GET",
+  headers: {
+    accept: "application/json",
+    Authorization:
+      "Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI1NjkyNjA0ZGQxZWZjZjY5MjhkODk5ODkwYzBkZjJhNSIsIm5iZiI6MTczODQ1NTUxOS40OTcsInN1YiI6IjY3OWViOWRmN2ViYjA2MTRmZjI2M2IyZCIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.DaxkwZ8iOfe1ZI4ElwI3BRVoQ7ukOnSwzw6U1u5uJxk",
+  },
+};

@@ -49,3 +49,25 @@ Note:
 - Unsubscribe - use this in on auth state change in header to unmount the useEffect to avoid infinite authentication.
 
 - Add hard code links to constants file
+
+- Configure TMDB
+
+  - Go to TMDB website
+  - Log in
+  - Go to API section
+  - Generate the key
+  - Go to documentation (It will be placed in the top section)
+  - Go to API Reference tab
+  - Movies List tab > Now playing
+  - Copy options and paste it in the constants.
+  - Make api cann using fetch and useEffect in Browse page
+  - Add this movies data to Redux store
+
+- Adding Movies Data in Redux store
+
+  - Create movies Slice
+  - Add it to app store
+  - Disptch it from browse page
+
+- Create custom hook
+  - To fetch movies ai from TMDB and upadte the store
