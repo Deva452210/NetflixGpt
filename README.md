@@ -70,4 +70,17 @@ Note:
   - Disptch it from browse page
 
 - Create custom hook
+
   - To fetch movies ai from TMDB and upadte the store
+
+- Start creating Browse page UI
+
+  - Create main and secondary sections
+  - fetch movies data from store to main section using UseSelector
+
+- Configure video trailer for the Main section
+
+  - Go to TMDB Movies tab > videos section
+  - Fetch data
+  - Add it in store
+  - create new hook for movie video
