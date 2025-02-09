@@ -45,3 +45,7 @@ Note:
   - add appstore in the store (<Provider store={appStore}>)
 
 - Solved bug - user redirection, moved useeffect to header
+
+- Unsubscribe - use this in on auth state change in header to unmount the useEffect to avoid infinite authentication.
+
+- Add hard code links to constants file

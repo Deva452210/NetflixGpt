@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import { useRef, useState } from "react";
 import Header from "./Header";
 import { checkValidData } from "../utils/validate";
@@ -10,9 +11,10 @@ import { auth } from "../utils/firebase";
 
 import { useDispatch } from "react-redux";
 import { addUser } from "../utils/userSlice";
+import { BGWALLPAPER, photoURL } from "../utils/constants";
 const Login = () => {
   const dispatch = useDispatch();
-  
+
   const [isSignInForm, setisSignInForm] = useState(false);
   const [errorMessage, seterrorMessage] = useState(null);
 
@@ -43,7 +45,7 @@ const Login = () => {
           const user = userCredential.user;
           updateProfile(user, {
             displayName: name.current.value,
-            photoURL: "https://cdn-icons-png.flaticon.com/512/7915/7915522.png",
+            photoURL: photoURL,
           })
             .then(() => {
               const { uid, email, displayName, photoURL } = auth.currentUser;
@@ -76,7 +78,7 @@ const Login = () => {
         .then((userCredential) => {
           // Signed in
           const user = userCredential.user;
-          
+
           // ...
         })
         .catch((error) => {
@@ -91,10 +93,7 @@ const Login = () => {
     <div className=" h-full">
       <Header />
       <div className=" absolute">
-        <img
-          src="https://assets.nflxext.com/ffe/siteui/vlv3/154a9550-ce07-4e28-819c-63185dd849f8/web/IN-en-20250106-TRIFECTA-perspective_27b02e7c-f668-4639-9e82-1a5485084b2a_medium.jpg"
-          alt=""
-        />
+        <img src={BGWALLPAPER} alt="" />
       </div>
       <form
         onSubmit={(e) => e.preventDefault()}
