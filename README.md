@@ -84,3 +84,6 @@ Note:
   - Fetch data
   - Add it in store
   - create new hook for movie video
+
+- Create movie list
+  - fetch data from store

@@ -7,3 +7,14 @@
   margin: 0;
   box-sizing: border-box;
 }
+body{
+  background: #000;
+}
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+.scrollbar-hide {
+  -ms-overflow-style: none;  /* Hide scrollbar in IE/Edge */
+  scrollbar-width: none;  /* Hide scrollbar in Firefox */
+}
