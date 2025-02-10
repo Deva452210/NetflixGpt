@@ -11,7 +11,7 @@ const VideoBG = ({ movieId }) => {
   useMovieVideo(movieId);
 
   return (
-    <div className=" w-[100%] h-[90vh] absolute">
+    <div className=" w-[100%] h-[90vh] absolute ">
       <iframe
         className=" aspect-video w-full h-full"
         src={`https://www.youtube.com/embed/${trailerVideo?.key}?si=UnKtb62e9Q85M0xn?&autoplay=0&mute=1&controls=0&showinfo=0&modestbranding=1&rel=0&playsinline=1&fs=1`}

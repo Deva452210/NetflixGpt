@@ -86,4 +86,12 @@ Note:
   - create new hook for movie video
 
 - Create movie list
+
   - fetch data from store
+  - created carousel
+    - npm install lucide-react
+
+- Now create a hook for popular movies
+  - Add it in store
+  - Call it in browse page
+  - Configure movie list in secondary container
