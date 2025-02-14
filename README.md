@@ -108,3 +108,6 @@ Note:
 - Created suggestion page
 - Create env file and add secrete keys in it
 - Implemented Memoization (Reduced Api calls)
+- Configured Firebase
+- npm Build
+- Deployed!
