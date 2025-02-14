@@ -5,11 +5,18 @@ import { useDispatch, useSelector } from "react-redux";
 import { addUser, removeUser } from "../utils/userSlice";
 import { useEffect } from "react";
 import { LOGO } from "../utils/constants";
+import gptlogo from "../../assets/GPT.png";
+import { toggleGptSearchView } from "../utils/GptSlice";
 
 const Header = () => {
   const navigate = useNavigate();
   const dispatch = useDispatch();
   const user = useSelector((store) => store.user);
+
+  //Toggle GPT search
+  const handleGptSeachClick = () => {
+    dispatch(toggleGptSearchView());
+  };
 
   const handleSignOut = () => {
     signOut(auth)
@@ -52,10 +59,10 @@ const Header = () => {
       {user && (
         <div className="right text-white">
           <ul className=" flex items-center gap-4">
-            <li>
-              <img className=" w-[25px]" src={user.photoURL} alt="" />
-            </li>
-
+            <li>{user.displayName}</li>{" "}
+            <button onClick={handleGptSeachClick}>
+              <img className=" w-[30px]" src={gptlogo} alt="" />
+            </button>
             <li>
               <button
                 onClick={handleSignOut}
@@ -64,7 +71,6 @@ const Header = () => {
                 Sign Out
               </button>
             </li>
-            <li>{user.displayName}</li>
           </ul>
         </div>
       )}

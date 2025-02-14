@@ -92,6 +92,16 @@ Note:
     - npm install lucide-react
 
 - Now create a hook for popular movies
+
   - Add it in store
   - Call it in browse page
   - Configure movie list in secondary container
+
+- Configure GPT using OPEN AI
+  - Create Gptsearch page
+  - create store for toggle
+  - create search component
+  - Go to platform openai
+  - Generate API Key
+  - Install npm openai
+  -
