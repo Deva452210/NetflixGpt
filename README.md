@@ -97,11 +97,13 @@ Note:
   - Call it in browse page
   - Configure movie list in secondary container
 
-- Configure GPT using OPEN AI
+- Configure GPT using Genini AI API
+
   - Create Gptsearch page
   - create store for toggle
   - create search component
-  - Go to platform openai
+  - Go to platform gemini ai
   - Generate API Key
-  - Install npm openai
-  -
+
+- Created suggestion page
+- Create env file and add secrete keys in it
