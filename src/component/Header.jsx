@@ -1,6 +1,6 @@
 import { onAuthStateChanged, signOut } from "firebase/auth";
 import { auth } from "../utils/firebase";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { addUser, removeUser } from "../utils/userSlice";
 import { useEffect } from "react";
@@ -54,7 +54,9 @@ const Header = () => {
 
   return (
     <div className=" absolute px-8 py-2 bg-gradient-to-b from-black w-full z-10 flex justify-between items-center">
-      <img className=" w-[150px] object-cover" src={LOGO} alt="" />
+      <Link to={"/"}>
+        <img className=" w-[150px] object-cover" src={LOGO} alt="" />
+      </Link>
 
       {user && (
         <div className="right text-white">
